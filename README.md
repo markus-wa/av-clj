@@ -1,10 +1,12 @@
 # av-clj
 
-Audio Visual stuff with Shadertone / GLSL.
+Audio Visual stuff with [Shadertone](https://github.com/overtone/shadertone) / [GLSL](https://learnopengl.com/Getting-started/Shaders).
 
 ## Usage
 
-1. Start SuperCollider server by running the following inside the SuperCollider IDE.
+### Windows
+
+1. Start a [SuperCollider](https://supercollider.github.io/) server by running the following inside the SuperCollider IDE.
 
 ```
 o = Server.default.options;
