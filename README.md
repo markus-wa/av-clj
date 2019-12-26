@@ -6,6 +6,8 @@ Audio Visual stuff with [Shadertone](https://github.com/overtone/shadertone) / [
 
 ### Windows
 
+For windows you'll need a fix for Shadertone that's not yet merged into the upstream repo. It's available on https://github.com/markus-wa/shadertone, just run `lein install` in that repo and you'll be good to go.
+
 1. Start a [SuperCollider](https://supercollider.github.io/) server by running the following inside the SuperCollider IDE.
 
 ```
