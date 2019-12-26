@@ -23,3 +23,9 @@ Server.default.reboot;
 3. Connect to the SuperCollider server with `(connect)`
 
 4. Start Shadertone with `(av)`
+
+5. Play some music and enjoy
+
+<p align="center">
+  <img alt="Zoomwave Shader" src="https://raw.githubusercontent.com/markus-wa/av-clj/master/zoomwave.png" width="50%">
+</p>
