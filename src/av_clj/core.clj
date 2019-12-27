@@ -1,12 +1,9 @@
 (ns av-clj.core
-    (:use [overtone.core]))
+    (:use [av-clj.loader]
+          [overtone.core]))
 
-(defn connect
-  "Connect to SuperCollider and redirect audio"
-  []
-  (connect-external-server)
-  (definst external [] (sound-in 0))
-  (external))
+(require
+ '[shadertone.tone :as t])
 
 (defn disconnect
   "Disconnect from SuperCollider"
@@ -16,5 +13,4 @@
 (defn av
   "Start AV"
   []
-  (require '[shadertone.tone :as t])
-  (t/start "resources/shaders/zoomwave.glsl" :textures [:overtone-audio :previous-frame]))
+  (t/start "resources/shaders/zoomwave.glsl" :width 1600 :height 900 :textures [:overtone-audio :previous-frame]))
