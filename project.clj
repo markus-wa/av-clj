@@ -8,4 +8,5 @@
                  [overtone "0.10.6" :exclusions [[clj-native]]]
                  [shadertone "0.2.6-SNAPSHOT"]
                  [clj-native "0.9.5"]]
+  :main ^:skip-aot av-clj.core
   :repl-options {:init-ns av-clj.core})
