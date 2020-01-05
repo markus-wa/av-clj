@@ -8,11 +8,26 @@
   []
   (kill-server))
 
-(defn av
-  "Start AV"
+(defn wave
+  "Start Zoomwave"
   []
   (t/start "resources/shaders/zoomwave.glsl" :width 1600 :height 900 :textures [:overtone-audio :previous-frame]))
 
+(defn cubes
+  "Start Cubeworld"
+  []
+  (t/start "resources/shaders/cubes.glsl" :width 1600 :height 900 :textures [:overtone-audio "resources/textures/wood.jpg"]))
+
+(defn vis
+  "Start FFT and wave visualisation"
+  []
+  (t/start "resources/shaders/sound.glsl" :width 420 :height 236 :textures [:overtone-audio]))
+
+(defn spec
+  "Start FFT/Spectrum vis"
+  []
+  (t/start "resources/shaders/spectrum.glsl" :width 420 :height 236 :textures [:overtone-audio]))
+
 (defn -main
   [& args]
-  (av))
+  (wave))

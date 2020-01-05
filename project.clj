@@ -9,4 +9,5 @@
                  [shadertone "0.2.6-SNAPSHOT"]
                  [clj-native "0.9.5"]]
   :main ^:skip-aot av-clj.core
-  :repl-options {:init-ns av-clj.core})
+  :repl-options {:init-ns av-clj.core}
+  :jvm-opts ^replace [])
