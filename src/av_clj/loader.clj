@@ -1,7 +1,7 @@
 (ns av-clj.loader
-    (:use [overtone.core]))
+    (:use [overtone.live]))
 
-(connect-external-server)
+;(connect-external-server)
 
 (definst external [] (sound-in 0))
 
