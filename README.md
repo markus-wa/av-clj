@@ -4,6 +4,26 @@ Audio Visual stuff with [Shadertone](https://github.com/overtone/shadertone) / [
 
 ## Usage
 
+### Linux
+
+1. build and install `clj-native` fix: https://github.com/bagucode/clj-native/pull/9
+
+2. build and install `overtone` fix: https://github.com/markus-wa/overtone
+
+3. build and install `shadertone` fix: https://github.com/markus-wa/shadertone/tree/fix-fft
+
+4. install Jack (https://jackaudio.org/)
+
+5. configure PulseAudio sink for Jack
+
+        sudo apt install pulseaudio-module-jack
+
+  in Jack, open the Settings menu, go to Options and enter the following under `Execute script after Startup`: `pacmd set-default-sink jack_out`
+
+6. run `lein run`
+
+7. in Jack, connect the sound source you want to use for Overtone
+
 ### Windows
 
 For windows you'll need a fix for Shadertone that's not yet merged into the upstream repo. It's available on https://github.com/markus-wa/shadertone, just run `lein install` in that repo and you'll be good to go.
