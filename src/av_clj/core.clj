@@ -28,6 +28,11 @@
   []
   (t/start "resources/shaders/spectrum.glsl" :width 420 :height 236 :textures [:overtone-audio]))
 
+(defn voronoi
+  "Start Voronoi"
+  []
+  (t/start "resources/shaders/voronoi.glsl" :width 1600 :height 900 :textures [:overtone-audio]))
+
 (defn -main
   [& args]
-  (wave))
+  (voronoi))
