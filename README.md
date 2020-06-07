@@ -2,6 +2,10 @@
 
 Audio Visual stuff with [Shadertone](https://github.com/overtone/shadertone) / [GLSL](https://learnopengl.com/Getting-started/Shaders).
 
+<p align="center">
+  <img alt="Voronoi Shader" src="https://raw.githubusercontent.com/markus-wa/av-clj/master/voronoi.png" width="50%">
+</p>
+
 ## Usage
 
 ### Linux
@@ -47,7 +51,3 @@ Server.default.reboot;
 3. Start Shadertone with `(av)`
 
 4. Play some music and enjoy
-
-<p align="center">
-  <img alt="Zoomwave Shader" src="https://raw.githubusercontent.com/markus-wa/av-clj/master/zoomwave.png" width="50%">
-</p>
