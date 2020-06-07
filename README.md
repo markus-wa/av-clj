@@ -3,7 +3,7 @@
 Audio Visual stuff with [Shadertone](https://github.com/overtone/shadertone) / [GLSL](https://learnopengl.com/Getting-started/Shaders).
 
 <p align="center">
-  <img alt="Voronoi Shader" src="https://raw.githubusercontent.com/markus-wa/av-clj/master/voronoi.png" width="50%">
+  <img alt="Voronoi Shader" src="https://raw.githubusercontent.com/markus-wa/av-clj/master/voronoi.png" width="90%">
 </p>
 
 ## Usage
