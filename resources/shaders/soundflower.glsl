@@ -13,7 +13,7 @@ void main()
 
 	float w = texture( iChannel0, vec2( abs(a)/3.14, 1.0) ).x;
 	
-	float t = 3.0*sqrt(abs(w-0.5));
+	float t = 3.5*sqrt(abs(w-0.5));
 
 	float f = 0.0;
 	if( r<t ) f = (1.0-r/t);
