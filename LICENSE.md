@@ -1,6 +1,8 @@
 MIT License
 
-Copyright (c) 2019 Markus Walther
+Copyright (c) 2019 - 2020 Markus Walther
+
+THIS LICENSE ONLY APPLIES WHERE NO OTHER LICENSING INFORMATION IS STATED IN THE FILE HEADER.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

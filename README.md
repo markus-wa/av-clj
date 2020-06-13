@@ -6,6 +6,12 @@ Audio Visual stuff with [Shadertone](https://github.com/overtone/shadertone) / [
   <img alt="Voronoi Shader" src="https://raw.githubusercontent.com/markus-wa/av-clj/master/voronoi.png" width="90%">
 </p>
 
+## License
+
+For the licenses of the shaders please check each shader in `resources/shaders/*.glsl`.
+
+Where not stated otherwise in the file header, other parts are licensed under the MIT license.
+
 ## Usage
 
 ### Linux
