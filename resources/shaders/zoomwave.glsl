@@ -1,10 +1,10 @@
 // taken from the Shadertone example and added rotation
+// https://github.com/overtone/shadertone/blob/master/examples/zoomwave.glsl
+// licensed as part of Shadertone under these conditions: https://github.com/overtone/shadertone/blob/master/LICENSE
 
 #ifdef GL_ES
 precision mediump float;
 #endif
-// taken from the Shadertone example 'zoomwave' and added rotation
-// https://github.com/overtone/shadertone/blob/master/examples/zoomwave.glsl
 
 #define ZOOM -0.035
 #define PREV_FRAME_ALPHA 0.95
