@@ -33,6 +33,11 @@
   []
   (t/start "resources/shaders/voronoi.glsl" :width 1600 :height 900 :textures [:overtone-audio]))
 
+(defn flower
+  "Start Soundflower"
+  []
+  (t/start "resources/shaders/soundflower.glsl" :width 1600 :height 900 :textures [:overtone-audio]))
+
 (defn -main
   [& args]
   (voronoi))
