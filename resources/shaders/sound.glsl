@@ -17,13 +17,12 @@
 void main()
 {
     vec2 fragCoord = gl_FragCoord.xy;
+
     // create pixel coordinates
     vec2 uv = fragCoord.xy / iResolution.xy;
 
-    uv.y -= 0.5;
-
     // the sound texture is 512x2
-    int tx = int(uv.x*1024);
+    int tx = int(uv.x*1024.0);
 
     // first row is frequency data (48Khz/4 in 512 texels, meaning 23 Hz per texel)
     float fft  = texelFetch( iChannel0, ivec2(tx,0), 0 ).x;
