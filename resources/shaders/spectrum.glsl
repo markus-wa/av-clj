@@ -1,3 +1,10 @@
+/*
+2D LED Spectrum - Visualiser
+Based on Led Spectrum Analyser by: simesgreen - 27th February, 2013 https://www.shadertoy.com/view/Msl3zr
+2D LED Spectrum by: uNiversal - 27th May, 2015
+Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+*/
+
 void main()
 {
     vec2 fragCoord  = gl_FragCoord.xy;
