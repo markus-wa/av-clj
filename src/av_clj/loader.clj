@@ -3,6 +3,13 @@
 
 ;(connect-external-server)
 
-(definst external [] (sound-in 0))
+(definst external-l [] (sound-in 0))
+(definst external-r [] (sound-in 1))
 
-(external)
+(defn external-lr
+  []
+  (do
+    (external-l)
+    (external-r)))
+
+(external-lr)
