@@ -16,7 +16,7 @@
 (defn cubes
   "Start Cubeworld"
   []
-  (t/start "resources/shaders/cubes.glsl" :width 1600 :height 900 :textures [:overtone-audio "resources/textures/wood.jpg"]))
+  (t/start "resources/shaders/cubes.glsl" :width 1600 :height 900 :textures [:overtone-audio "resources/textures/matrix.png"]))
 
 (defn vis
   "Start FFT and wave visualisation"
