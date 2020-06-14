@@ -57,3 +57,22 @@ Server.default.reboot;
 3. Start Shadertone with `(av)`
 
 4. Play some music and enjoy
+
+## Fake video device for GLMixer
+
+1. Install https://github.com/umlaeute/v4l2loopback according to instructions
+
+2. `xid=$(wmctrl -l | grep "av-clj-output" | cut -f 1 -d' ')`
+
+3. `gst-launch-1.0 -v ximagesrc xid=$xid use-damage=false ! videoconvert ! videoscale ! "video/x-raw,width=1280,height=720,framerate=30/1,format=YUY2" ! v4l2sink device=/dev/video4`
+
+## Streaming notes
+
+### Simple network streaming of a single window
+
+```
+imgsrc=xid=0x05800018
+gst-launch-1.0 -v ximagesrc $imgsrc ! video/x-raw,framerate=20/1 ! videoscale ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay ! queue ! udpsink host=127.0.0.1 port=5001
+
+gst-launch-1.0 -v udpsrc port=5001 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+```
