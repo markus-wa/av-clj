@@ -16,7 +16,7 @@ Where not stated otherwise in the file header, other parts are licensed under th
 
 ### Linux
 
-1. build and install `clj-native` fix: https://github.com/bagucode/clj-native/pull/9
+1. build and install `clj-native` fix: https://github.com/markus-wa/clj-native/tree/bool-ptr
 
 2. build and install `overtone` fix: https://github.com/markus-wa/overtone
 
