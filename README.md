@@ -16,11 +16,7 @@ Where not stated otherwise in the file header, other parts are licensed under th
 
 ### Linux
 
-1. build and install `clj-native` fix: https://github.com/markus-wa/clj-native/tree/bool-ptr
-
-2. build and install `overtone` fix: https://github.com/markus-wa/overtone
-
-3. build and install `shadertone` fix: https://github.com/markus-wa/shadertone/tree/fix-fft
+1. `lein deps`
 
 4. install Jack (https://jackaudio.org/)
 
