@@ -16,6 +16,8 @@ Where not stated otherwise in the file header, other parts are licensed under th
 
 ### Linux
 
+⚠️ - you must use the [Adoptium JDK](https://adoptium.net/?variant=openjdk11)
+
 1. `lein deps`
 
 2. install Jack (https://jackaudio.org/)
