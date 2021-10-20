@@ -18,17 +18,17 @@ Where not stated otherwise in the file header, other parts are licensed under th
 
 1. `lein deps`
 
-4. install Jack (https://jackaudio.org/)
+2. install Jack (https://jackaudio.org/)
 
-5. configure PulseAudio sink for Jack
+3. configure PulseAudio sink for Jack
 
         sudo apt install pulseaudio-module-jack
 
   in Jack, open the Settings menu, go to Options and enter the following under `Execute script after Startup`: `pacmd set-default-sink jack_out`
 
-6. run `lein run`
+4. run `lein run`
 
-7. in Jack, connect the sound source you want to use for Overtone
+5. in Jack, connect the sound source you want to use for Overtone
 
 ### Windows
 

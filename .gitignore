@@ -13,3 +13,6 @@ pom.xml.asc
 .hg/
 .idea/
 *.log
+.clj-kondo
+.lsp
+.cpcache

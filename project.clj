@@ -5,8 +5,8 @@
   {:name "MIT"
    :url  "https://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.10.0"]
-                 [overtone "59d29497bfd0242a423c4c1797241e6513a891d2" :exclusions [[clj-native]]]
-                 [shadertone "86012996a9ac4036b494f3894309cbe8a15ec486"]
+                 [overtone "e925f06d25786ad9b3b9fddcd87eb2a11f359762" :exclusions [[clj-native]]]
+                 [shadertone "89d3a647d18e95fce4f90fff3feb5d8af2522575"]
                  [clj-native "6b75d4a59cf85779c3935ff55330bed68da92124"]]
   :plugins [[reifyhealth/lein-git-down "0.4.0"]]
   :middleware [lein-git-down.plugin/inject-properties]
